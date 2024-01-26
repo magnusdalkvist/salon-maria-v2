@@ -24,7 +24,7 @@ export function DesktopNavigationMenu() {
     <NavigationMenu>
       <NavigationMenuList>
         <Link href="#priser">
-          <NavigationMenuItem>
+          <NavigationMenuItem className="hidden sm:block">
             <NavigationMenuTrigger>Priser</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="p-4 w-[374px] md:w-[500px] lg:w-[600px]">
@@ -62,7 +62,7 @@ export function DesktopNavigationMenu() {
             </NavigationMenuContent>
           </NavigationMenuItem>
         </Link>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="hidden sm:block">
           <NavigationMenuTrigger>Galleri</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[374px] gap-3 p-4 md:w-[500px] grid-cols-3 lg:w-[600px] ">
