@@ -97,7 +97,7 @@ export function Hero() {
       className="grid grid-cols-3 items-center gap-4 max-w-screen-xl mx-auto py-[100px]"
       ref={hero}
     >
-      <div className="text-[#EE522C] z-10 col-[1/3] row-start-1 max-w-xl flex flex-col gap-10 items-start">
+      <div className="text-white z-10 col-[1/3] row-start-1 max-w-xl flex flex-col gap-10 items-start">
         <div className="text-7xl font-bold">WRITE A HERO TEXT HERE!</div>
         <div>Write some info here maybe</div>
         <ul className=" list-disc list-inside">
@@ -106,7 +106,7 @@ export function Hero() {
           <li>Keypoint 3</li>
         </ul>
         <div className="flex gap-4">
-          <Button asChild className="flex gap-2 bg-[#EE522C] hover:bg-[#d43811]">
+          <Button asChild className="flex gap-2 bg-black hover:bg-black">
             <Link href="/">Book tid</Link>
           </Button>
           <Button asChild className="border-white">
@@ -114,10 +114,10 @@ export function Hero() {
           </Button>
         </div>
       </div>
-      <div className="hero-image bg-white flex items-center justify-center col-start-2 row-start-1 aspect-[2/3] mt-10 rounded-md">
+      <div className="hero-image bg-black text-white flex items-center justify-center col-start-2 row-start-1 aspect-[2/3] mt-10 rounded-md">
         image
       </div>
-      <div className="hero-image bg-white flex items-center justify-center col-start-3 row-start-1 aspect-[2/3] mb-10 rounded-md">
+      <div className="hero-image bg-black text-white flex items-center justify-center col-start-3 row-start-1 aspect-[2/3] mb-10 rounded-md">
         image
       </div>
     </div>
