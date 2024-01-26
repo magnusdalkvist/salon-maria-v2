@@ -38,7 +38,10 @@ export function DesktopNavigationMenu() {
                 >
                   <CarouselContent className="pl-3 gap-3">
                     {prices.map((price, i) => (
-                      <CarouselItem className="p-2 basis-[60%] bg-[#eee] hover:bg-[#ccc] rounded-md overflow-hidden">
+                      <CarouselItem
+                        className="p-2 basis-[60%] bg-[#eee] hover:bg-[#ccc] rounded-md overflow-hidden"
+                        key={i}
+                      >
                         <Link href="#priser" key={i} onClick={() => changeActiveAccordion(i)}>
                           <p className="text-xl">{price.title}</p>
                           <div className="flex flex-col gap-2">
