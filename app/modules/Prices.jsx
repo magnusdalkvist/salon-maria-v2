@@ -11,7 +11,7 @@ import { useAccordionStore } from "../page";
 
 export function Prices() {
   return (
-    <div className="p-2 bg-white" id="priser">
+    <div className="p-6 bg-white" id="priser">
       <div className="mx-auto max-w-screen-xl grid md:grid-cols-5 gap-4 ">
         <div className="flex flex-col gap-4 md:col-[1/3] py-4">
           <p>Priser</p>
@@ -26,7 +26,7 @@ export function Prices() {
 
 function PriceList() {
   const activeAccordion = useAccordionStore((state) => state.active);
-
+  const setActiveAccordion = useAccordionStore((state) => state.setActive);
   return (
     <div className="w-full md:col-[3/6]">
       <Accordion
@@ -36,7 +36,7 @@ function PriceList() {
         value={`value-${activeAccordion}`}
       >
         {prices.map((price, i) => (
-          <AccordionItem value={`value-${i}`} key={i}>
+          <AccordionItem value={`value-${i}`} key={i} onClick={() => setActiveAccordion(i)}>
             <AccordionTrigger className="text-xl">{price.title}</AccordionTrigger>
             <AccordionContent className="flex flex-col gap-2">
               {price.items.map((item, i) => (

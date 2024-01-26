@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <div className="p-2">
+    <div className="p-6">
       <div className="flex gap-4 justify-between items-start text-white mx-auto max-w-screen-xl">
         <div className="flex flex-col items-start gap-4">
           <Image src="/logo.jpg" width="1600" height="302" alt="logo" className="h-10 w-auto" />
@@ -15,7 +15,7 @@ export function Footer() {
           </div>
         </div>
         <div className="font-bold flex flex-col gap-2">
-          <p className="text-2xl">Opening Hours</p>
+          <p className="text-2xl">Åbningstider</p>
           <div>Tirsdag til fredag / 09:30 - 17:30</div>
           <div>Lørdag / 09:00 - 14:00</div>
           <div className="flex gap-4 items-center">

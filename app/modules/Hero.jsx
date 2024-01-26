@@ -93,32 +93,34 @@ export function Hero() {
     { scope: hero }
   );
   return (
-    <div
-      className="grid grid-cols-3 items-center gap-4 max-w-screen-xl mx-auto py-[100px]"
-      ref={hero}
-    >
-      <div className="text-white z-10 col-[1/3] row-start-1 max-w-xl flex flex-col gap-10 items-start">
-        <div className="text-7xl font-bold">WRITE A HERO TEXT HERE!</div>
-        <div>Write some info here maybe</div>
-        <ul className=" list-disc list-inside">
-          <li>Keypoint 1</li>
-          <li>Keypoint 2</li>
-          <li>Keypoint 3</li>
-        </ul>
-        <div className="flex gap-4">
-          <Button asChild className="flex gap-2 bg-black hover:bg-black">
-            <Link href="/">Book tid</Link>
-          </Button>
-          <Button asChild className="border-white">
-            <Link href="/">Se priser</Link>
-          </Button>
+    <div className="px-6">
+      <div
+        className="grid grid-cols-3 items-center gap-4 max-w-screen-xl mx-auto py-[100px]"
+        ref={hero}
+      >
+        <div className="text-white z-10 col-[1/3] row-start-1 max-w-xl flex flex-col gap-10 items-start">
+          <div className="text-7xl font-bold">WRITE A HERO TEXT HERE!</div>
+          <div>Write some info here maybe</div>
+          <ul className=" list-disc list-inside">
+            <li>Keypoint 1</li>
+            <li>Keypoint 2</li>
+            <li>Keypoint 3</li>
+          </ul>
+          <div className="flex gap-4">
+            <Button asChild className="flex gap-2 bg-black hover:bg-black">
+              <Link href="/">Book tid</Link>
+            </Button>
+            <Button asChild className="border-white">
+              <Link href="/">Se priser</Link>
+            </Button>
+          </div>
         </div>
-      </div>
-      <div className="hero-image bg-black text-white flex items-center justify-center col-start-2 row-start-1 aspect-[2/3] mt-10 rounded-md">
-        image
-      </div>
-      <div className="hero-image bg-black text-white flex items-center justify-center col-start-3 row-start-1 aspect-[2/3] mb-10 rounded-md">
-        image
+        <div className="hero-image bg-black text-white flex items-center justify-center col-start-2 row-start-1 aspect-[2/3] mt-10 rounded-md">
+          image
+        </div>
+        <div className="hero-image bg-black text-white flex items-center justify-center col-start-3 row-start-1 aspect-[2/3] mb-10 rounded-md">
+          image
+        </div>
       </div>
     </div>
   );

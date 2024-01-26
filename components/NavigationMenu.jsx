@@ -27,7 +27,7 @@ export function DesktopNavigationMenu() {
           <NavigationMenuItem>
             <NavigationMenuTrigger>Priser</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="p-4 w-[400px] md:w-[500px] lg:w-[600px]">
+              <ul className="p-4 w-[374px] md:w-[500px] lg:w-[600px]">
                 <Carousel
                   opts={{
                     align: "center",
@@ -65,7 +65,7 @@ export function DesktopNavigationMenu() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Galleri</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-3 lg:w-[600px] ">
+            <ul className="grid w-[374px] gap-3 p-4 md:w-[500px] grid-cols-3 lg:w-[600px] ">
               <div className="bg-[#eee] flex items-center justify-center aspect-square rounded-md">
                 image
               </div>
