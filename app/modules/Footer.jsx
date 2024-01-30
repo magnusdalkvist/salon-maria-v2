@@ -7,7 +7,13 @@ export function Footer() {
     <div className="p-6">
       <div className="flex gap-4 justify-between items-start text-white mx-auto max-w-screen-xl">
         <div className="flex flex-col items-start gap-4">
-          <Image src="/logo.jpg" width="1600" height="302" alt="logo" className="h-10 w-auto" />
+          <Image
+            src="/logo.jpg"
+            width="1600"
+            height="302"
+            alt="logo"
+            className="h-10 w-auto object-contain"
+          />
           <div className="flex flex-col gap-2">
             <div>CVR: 35768521</div>
             <Link href="tlf:+4539561666">TLF: +45 39 56 16 66</Link>
