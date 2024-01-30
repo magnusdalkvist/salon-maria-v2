@@ -14,7 +14,7 @@ export function Hours() {
             <Link href="https://salon-maria.planway.com/">Book tid</Link>
           </Button>
         </div>
-        <div className="bg-white lg:w-[2px] h-[2px] lg:h-auto rounded-md" />
+        <div className="bg-red lg:w-[2px] h-[2px] lg:h-auto rounded-md" />
         <div className="md:py-10 flex-1 flex flex-col items-center justify-center">
           <div className=" flex flex-col gap-2 text-lg md:text-xl items-center text-center">
             <div>Tirsdag – fredag / 09:30 - 17:30</div>

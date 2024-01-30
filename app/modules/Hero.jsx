@@ -55,7 +55,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="border-b-red border-b-2 hero-image opacity-0 translate-y-[100px] text-white flex items-center justify-center lg:col-start-2 lg:row-start-1 mt-10 mb-2 md:mt-[25%] lg:mb-[10%] rounded-md overflow-hidden">
+        <div className="border-b-red border-b-[4px] hero-image opacity-0 translate-y-[100px] text-white flex items-center justify-center lg:col-start-2 lg:row-start-1 mt-10 mb-2 md:mt-[25%] lg:mb-[10%] rounded-md overflow-hidden">
           <Image
             className="grayscale object-cover aspect-[2/3]"
             src="/maria.jpg"
@@ -65,7 +65,7 @@ export function Hero() {
             alt="Maria"
           />
         </div>
-        <div className="border-b-red border-b-2 hero-image opacity-0 translate-y-[-100px] text-white flex items-center justify-center lg:col-start-3 lg:row-start-1 mb-10 mt-2 md:mb-[25%] lg:mt-[10%] rounded-md overflow-hidden">
+        <div className="border-b-red border-b-[4px] hero-image opacity-0 translate-y-[-100px] text-white flex items-center justify-center lg:col-start-3 lg:row-start-1 mb-10 mt-2 md:mb-[25%] lg:mt-[10%] rounded-md overflow-hidden">
           <Image
             className="grayscale object-cover aspect-[2/3]"
             src="/arash.jpg"
