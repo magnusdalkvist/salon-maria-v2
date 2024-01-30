@@ -40,7 +40,7 @@ export function Info() {
   return (
     <div ref={info} className="opacity-0 py-10 md:py-[100px] lg:px-6 bg-white text-black ">
       <Carousel
-        className="gap-8 max-w-screen-xl mx-auto w-full flex flex-col lg:flex-row"
+        className="gap-8 max-w-screen-xl mx-auto w-full flex flex-col-reverse lg:flex-row"
         setApi={setApi}
       >
         <div className="flex-1 px-4 lg:px-0">
