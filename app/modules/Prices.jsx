@@ -34,7 +34,7 @@ function PriceList() {
       <Accordion
         type="single"
         collapsible
-        className="flex flex-col gap-2"
+        className="flex flex-col gap-2 md:pt-4 lg:pt-7"
         value={`value-${activeAccordion}`}
       >
         {prices.map((price, i) => (
@@ -44,7 +44,7 @@ function PriceList() {
               {price.items.map((item, i) => (
                 <div key={i} className="flex gap-2">
                   {item.name}
-                  <div className="border-b border-dashed border-white flex-1 mb-1.5"></div>
+                  <div className="border-b border-dashed border-grey flex-1 mb-1.5"></div>
                   <span>{item.price} kr.</span>
                 </div>
               ))}

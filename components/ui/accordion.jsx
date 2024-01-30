@@ -11,17 +11,14 @@ const Accordion = AccordionPrimitive.Root;
 const AccordionItem = React.forwardRef(({ className, ...props }, ref) => (
   <AccordionPrimitive.Item
     ref={ref}
-    className={cn(
-      "border border-grey rounded-md transition-[background-color] data-[state=open]:bg-grey data-[state=open]:text-white",
-      className
-    )}
+    className={cn("transition-[background-color] ", className)}
     {...props}
   />
 ));
 AccordionItem.displayName = "AccordionItem";
 
 const AccordionTrigger = React.forwardRef(({ className, children, ...props }, ref) => (
-  <AccordionPrimitive.Header className="flex">
+  <AccordionPrimitive.Header className="flex bg-grey text-white">
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
@@ -40,10 +37,10 @@ AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName;
 const AccordionContent = React.forwardRef(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+    className="overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
     {...props}
   >
-    <div className={cn("py-2 px-3 pt-0", className)}>{children}</div>
+    <div className={cn("py-2 px-3", className)}>{children}</div>
   </AccordionPrimitive.Content>
 ));
 
