@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.button-text::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 1rem;
+  height: 2px;
+  background-color: #e44c1d;
+  transform: scaleX(0);
+  transition: transform 350ms ease-in-out;
+  transform-origin: right;
+}
+
+.button-text:hover::after {
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 768px) {
+  .button-text::after {
+    transform: scaleX(1);
+  }
+}

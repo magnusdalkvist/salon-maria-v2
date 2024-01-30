@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "./index.css";
 import { Header } from "@/app/modules/Header";
 import { Footer } from "./modules/Footer";
 
@@ -10,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en">
       <body className="bg-grey">
         <Header />
         {children}

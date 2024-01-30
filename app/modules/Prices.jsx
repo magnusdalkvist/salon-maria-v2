@@ -11,12 +11,14 @@ import { useAccordionStore } from "../page";
 
 export function Prices() {
   return (
-    <div className="p-6 bg-white" id="priser">
-      <div className="mx-auto max-w-screen-xl grid md:grid-cols-5 gap-4 ">
-        <div className="flex flex-col gap-4 md:col-[1/3] py-4">
-          <p>Priser</p>
+    <div className="px-4 md:px-6 py-10 md:py-[100px] bg-white scroll-m-14" id="priser">
+      <div className="mx-auto max-w-screen-xl flex flex-col md:flex-row gap-6 lg:gap-8">
+        <div className="flex flex-col gap-2 md:w-[250px] md:py-2">
+          <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-serif lg:text-justify">
+            Priser
+          </p>
           <p>Du kan betale med kort, kontant og MobilePay</p>
-          <p>Studierabat/pensionist: -10%</p>
+          <p>Studierabat / pensionist: -10%</p>
         </div>
         <PriceList />
       </div>
@@ -28,7 +30,7 @@ function PriceList() {
   const activeAccordion = useAccordionStore((state) => state.active);
   const setActiveAccordion = useAccordionStore((state) => state.setActive);
   return (
-    <div className="w-full md:col-[3/6]">
+    <div className="flex-1">
       <Accordion
         type="single"
         collapsible

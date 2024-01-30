@@ -91,8 +91,8 @@ export function DesktopNavigationMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Button asChild className="flex gap-2 bg-black hover:bg-black">
-            <Link href="/">Book tid</Link>
+          <Button variant="text" asChild>
+            <Link href="https://salon-maria.planway.com/">Book tid</Link>
           </Button>
         </NavigationMenuItem>
       </NavigationMenuList>

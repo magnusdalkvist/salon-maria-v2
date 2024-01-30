@@ -9,6 +9,10 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      sans: ["Montserrat", "Inter", "sans-serif"],
+      serif: ["Libre Baskerville", "serif"],
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -18,7 +22,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        grey: "#58585A",
+        grey: "#1A1A1A",
+        red: "#E44C1D",
+        darkRed: "#B63C18",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
