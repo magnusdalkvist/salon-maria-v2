@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import clsx from "clsx";
 
 const CarouselContext = React.createContext(null);
 
@@ -154,7 +155,7 @@ const CarouselPrevious = React.forwardRef(
         ref={ref}
         variant={variant}
         size={size}
-        className="text-black border-black"
+        className={clsx("text-black border-black", className)}
         disabled={!canScrollPrev}
         onClick={scrollPrev}
         {...props}
@@ -176,7 +177,7 @@ const CarouselNext = React.forwardRef(
         ref={ref}
         variant={variant}
         size={size}
-        className="text-black border-black"
+        className={clsx("text-black border-black", className)}
         disabled={!canScrollNext}
         onClick={scrollNext}
         {...props}

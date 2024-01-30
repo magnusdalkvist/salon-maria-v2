@@ -7,8 +7,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { useEffect, useState, useRef } from "react";
-import { Transition } from "react-transition-group";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useEffect, useRef, useState } from "react";
 
 export function Info() {
   const [api, setApi] = useState();
@@ -26,10 +27,23 @@ export function Info() {
     });
   }, [api]);
 
+  const info = useRef();
+  const tl = useRef();
+
+  useGSAP(
+    () => {
+      tl.current = gsap.timeline().to(info.current, { duration: 1, opacity: 1, delay: 1 });
+    },
+    { scope: info }
+  );
+
   return (
-    <div className="px-4 py-10 md:px-6 bg-white text-black ">
-      <Carousel className="gap-8 max-w-screen-xl mx-auto w-full flex" setApi={setApi}>
-        <div className="flex-1">
+    <div ref={info} className="opacity-0 py-10 md:py-[100px] lg:px-6 bg-white text-black ">
+      <Carousel
+        className="gap-8 max-w-screen-xl mx-auto w-full flex flex-col lg:flex-row"
+        setApi={setApi}
+      >
+        <div className="flex-1 px-4 lg:px-0">
           {slides.map((slide, i) => {
             if (i + 1 === current) {
               return (
@@ -43,15 +57,15 @@ export function Info() {
           })}
         </div>
         <div className="flex flex-1 items-center gap-4">
-          <CarouselPrevious />
-          <CarouselContent className="gap-4">
+          <CarouselPrevious className="hidden lg:flex" />
+          <CarouselContent className="gap-4  mx-4 lg:mx-0">
             {slides.map((slide, i) => (
-              <CarouselItem key={i}>
+              <CarouselItem key={i} className="basis-10/12 lg:basis-full">
                 <div className="aspect-square bg-grey rounded-md"></div>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselNext />
+          <CarouselNext className="hidden lg:flex" />
         </div>
       </Carousel>
     </div>
@@ -119,7 +133,8 @@ const slides = [
           voksen- og børnefrisør, byder både børn og voksne velkommen i vores to forskellige
           lokaler.
         </p>
-        <p class="bold">Børnevenlige Omgivelser:</p>
+        <br>
+        <p class="font-semibold">Børnevenlige Omgivelser:</p>
         <ul class="list-[square] ml-5 flex flex-col gap-2">
           <li>Sjove stole (en bil og en scooter)</li>
           <li>Legetøj og tv for at underholde under klipningen</li>
