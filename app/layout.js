@@ -3,6 +3,7 @@ import "./globals.css";
 import "./index.css";
 import { Header } from "@/app/modules/Header";
 import { Footer } from "./modules/Footer";
+import Script from "next/script";
 
 export const metadata = {
   title: "Create Next App",
@@ -12,6 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/927b04ae803e24da1af8530c/script.js"></Script>
       <body className="bg-grey">
         <Header />
         {children}
