@@ -10,6 +10,7 @@ import {
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 export function Info() {
   const [api, setApi] = useState();
@@ -61,7 +62,7 @@ export function Info() {
           <CarouselContent className="gap-4  mx-4 lg:mx-0">
             {slides.map((slide, i) => (
               <CarouselItem key={i} className="basis-10/12 lg:basis-full">
-                <div className="aspect-square bg-grey rounded-md"></div>
+                <Image src={slide.image} width={512} height={512} className="aspect-square object-cover object-top rounded-lg w-full h-full"></Image>
               </CarouselItem>
             ))}
           </CarouselContent>
@@ -84,7 +85,7 @@ const slides = [
           stor vægt på både din og dit hårs sundhed.
         </p>
       `,
-    image: "image_url_1",
+    image: "/maria.jpg",
   },
   {
     content: `
@@ -102,7 +103,7 @@ const slides = [
           frisører skaber sunde, naturlige resultater med vitalitet og glans.
         </p>
       `,
-    image: "image_url_2",
+    image: "/arash.jpg",
   },
   {
     content: `
@@ -120,7 +121,7 @@ const slides = [
           frisører skaber sunde, naturlige resultater med vitalitet og glans.
         </p>
       `,
-    image: "image_url_3",
+    image: "/previa.png",
   },
   {
     content: `
@@ -141,7 +142,7 @@ const slides = [
           <li>En lille gave med en slikkepind til børnene ved afslutningen</li>
         </ul>
       `,
-    image: "image_url_4",
+    image: "/gallery/boerneklip1.jpg",
   },
   {
     content: `
@@ -154,7 +155,7 @@ const slides = [
           se vores produktsortiment.
         </p>
       `,
-    image: "image_url_5",
+    image: "/gallery/boerneklip6.jpg",
   },
   {
     content: `
@@ -166,7 +167,8 @@ const slides = [
           tider og book den tid, der passer dig bedst. Vi glæder os til at byde dig velkommen hos
           Salon Maria.
         </p>
+        <a href="https://salon-maria.planway.com/" class="underline font-semibold">Book tid her</a>
       `,
-    image: "image_url_6",
+    image: "/booking.jpg",
   },
 ];

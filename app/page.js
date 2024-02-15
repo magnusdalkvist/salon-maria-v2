@@ -3,6 +3,7 @@ import { Hero } from "./modules/Hero";
 import { Hours } from "./modules/Hours";
 import { Info } from "./modules/Info";
 import { Prices } from "./modules/Prices";
+import Map from "./modules/Map";
 
 export const useAccordionStore = create((set) => ({
   active: 0,
@@ -16,6 +17,7 @@ export default function Home() {
       <Info />
       <Hours />
       <Prices />
+      <Map />
     </main>
   );
 }

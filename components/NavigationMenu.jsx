@@ -16,6 +16,7 @@ import { Button } from "./ui/button";
 import { prices } from "@/app/data/prices";
 import { useAccordionStore } from "@/app/page";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import Image from "next/image";
 
 export function DesktopNavigationMenu() {
   const changeActiveAccordion = useAccordionStore((state) => state.setActive);
@@ -23,7 +24,7 @@ export function DesktopNavigationMenu() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-        <Link href="#priser">
+        <Link href="/#priser">
           <NavigationMenuItem className="hidden sm:block">
             <NavigationMenuTrigger>Priser</NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -42,7 +43,7 @@ export function DesktopNavigationMenu() {
                         className="p-2 basis-[60%] bg-[#eee] hover:bg-[#ccc] rounded-md overflow-hidden"
                         key={i}
                       >
-                        <Link href="#priser" key={i} onClick={() => changeActiveAccordion(i)}>
+                        <Link href="/#priser" key={i} onClick={() => changeActiveAccordion(i)}>
                           <p className="text-xl">{price.title}</p>
                           <div className="flex flex-col gap-2">
                             {price.items.slice(0, 6).map((item, i) => (
@@ -66,27 +67,22 @@ export function DesktopNavigationMenu() {
           </NavigationMenuItem>
         </Link>
         <NavigationMenuItem className="hidden sm:block">
-          <NavigationMenuTrigger>Galleri</NavigationMenuTrigger>
+          <Link href="/galleri">
+            <NavigationMenuTrigger>Galleri</NavigationMenuTrigger>
+          </Link>
           <NavigationMenuContent>
             <ul className="grid w-[374px] gap-3 p-4 md:w-[500px] grid-cols-3 lg:w-[600px] ">
-              <div className="bg-[#eee] flex items-center justify-center aspect-square rounded-md">
-                image
-              </div>
-              <div className="bg-[#eee] flex items-center justify-center aspect-square rounded-md">
-                image
-              </div>
-              <div className="bg-[#eee] flex items-center justify-center aspect-square rounded-md">
-                image
-              </div>
-              <div className="bg-[#eee] flex items-center justify-center aspect-square rounded-md">
-                image
-              </div>
-              <div className="bg-[#eee] flex items-center justify-center aspect-square rounded-md">
-                image
-              </div>
-              <div className="bg-[#eee] hover:bg-[#ccc] flex items-center justify-center aspect-square rounded-md">
-                Se mere
-              </div>
+              {Array(6)
+                .fill()
+                .map((item, i) => (
+                    <Image
+                      key={i}
+                      src={`/gallery/boerneklip${i + 1}.jpg`}
+                      width={300}
+                      height={300}
+                      className="bg-[#eee] flex items-center justify-center rounded-md object-cover aspect-square "
+                    />
+                ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
