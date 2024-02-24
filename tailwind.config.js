@@ -22,7 +22,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        grey: "#1A1A1A",
+        grey: "#181818",
         red: "#E44C1D",
         darkRed: "#B63C18",
         border: "hsl(var(--border))",
