@@ -38,7 +38,7 @@ export function Hero() {
           </h1>
           <h2 className="italic">
             Salon Maria skaber en bæredygtig, familievenlig frisøreoplevelse med innovative
-            klipninger og luksuriøs hårpleje
+            klipninger og luksuriøs hårpleje i København.
           </h2>
           <ul className="list-[square] ml-5 flex flex-col gap-2">
             <li>Indbydende Familievenlig Atmosfære</li>

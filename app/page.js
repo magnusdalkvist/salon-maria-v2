@@ -48,11 +48,6 @@ const slides = [
           klippe alle slags herre- og børnehår med tålmodighed og smil. Efter klipningen rådgiver
           han om de rigtige produkter for at opretholde resultatet derhjemme.
         </p>
-        <p>
-          Forkæl dit hår med vores pH Laboratories farver fra Previa. De er ammoniakfrie og
-          indeholder argan og keratin for at give dig pålidelige og let anvendelige farver. Vores
-          frisører skaber sunde, naturlige resultater med vitalitet og glans.
-        </p>
       `,
     image: "/arash.webp",
     alt: "Arash",
@@ -82,7 +77,7 @@ const slides = [
   {
     content: `
         <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-serif">
-          Glade Kunder
+          Glade kunder
         </h2>
         <p>
           Vi har glade og tilfredse kunder, der sætter pris på vores behagelige salon og vores nøje
@@ -96,7 +91,7 @@ const slides = [
   {
     content: `
         <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-serif">
-          Bestil Tid
+          Bestil tid
         </h2>
         <p>
           Du kan allerede i dag bestille tid til vores salon via vores hjemmeside. Se vores ledige
