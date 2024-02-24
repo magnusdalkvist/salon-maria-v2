@@ -61,9 +61,9 @@ export function Hero() {
             src="/maria.webp"
             width={521}
             height={782}
-            priority
+            priority={true}
             alt="Maria"
-            loading="eager"
+            sizes="(max-width: 600px) 100vw, 50vw"
           />
         </div>
         <div className="border-b-red border-b-[4px] hero-image opacity-0 translate-y-[-100px] text-white flex items-center justify-center lg:col-start-3 lg:row-start-1 mb-10 mt-2 md:mb-[25%] lg:mt-[10%] rounded-md overflow-hidden">
@@ -72,9 +72,9 @@ export function Hero() {
             src="/arash.webp"
             width={1004}
             height={1508}
-            priority
+            priority={true}
             alt="Arash"
-            loading="eager"
+            sizes="(max-width: 600px) 100vw, 50vw"
           />
         </div>
       </div>
