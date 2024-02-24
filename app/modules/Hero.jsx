@@ -63,6 +63,7 @@ export function Hero() {
             height={782}
             priority
             alt="Maria"
+            loading="eager"
           />
         </div>
         <div className="border-b-red border-b-[4px] hero-image opacity-0 translate-y-[-100px] text-white flex items-center justify-center lg:col-start-3 lg:row-start-1 mb-10 mt-2 md:mb-[25%] lg:mt-[10%] rounded-md overflow-hidden">
@@ -73,6 +74,7 @@ export function Hero() {
             height={1508}
             priority
             alt="Arash"
+            loading="eager"
           />
         </div>
       </div>
