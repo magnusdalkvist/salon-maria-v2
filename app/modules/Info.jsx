@@ -32,14 +32,15 @@ export function Info({ enableGSAP = false, slides = [] }) {
   const info = useRef();
   const tl = useRef();
 
-  if (enableGSAP) {
-    useGSAP(
-      () => {
-        tl.current = gsap.timeline().to(info.current, { duration: 1, opacity: 1, delay: 1 });
-      },
-      { scope: info }
-    );
-  }
+  useGSAP(
+    () => {
+      if (!enableGSAP) {
+        return;
+      }
+      tl.current = gsap.timeline().to(info.current, { duration: 1, opacity: 1, delay: 1 });
+    },
+    { scope: info }
+  );
 
   return (
     <section
