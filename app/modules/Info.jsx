@@ -54,15 +54,13 @@ export function Info({ enableGSAP = false, slides = [] }) {
         >
           <div className="flex-1 px-4 lg:px-0">
             {slides.map((slide, i) => {
-              if (i + 1 === current) {
-                return (
-                  <div
-                    key={i}
-                    className="flex flex-col gap-2"
-                    dangerouslySetInnerHTML={{ __html: slide.content }}
-                  />
-                );
-              }
+              return (
+                <div
+                  key={i}
+                  className={clsx("flex flex-col gap-2", current != i + 1 && "hidden")}
+                  dangerouslySetInnerHTML={{ __html: slide.content }}
+                />
+              );
             })}
           </div>
           <div className="flex flex-1 items-center gap-4">
