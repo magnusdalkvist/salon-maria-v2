@@ -24,9 +24,10 @@ export function DesktopNavigationMenu() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-        <Link href="/#priser">
-          <NavigationMenuItem className="hidden sm:block">
-            <NavigationMenuTrigger>Priser</NavigationMenuTrigger>
+        <NavigationMenuItem className="hidden sm:block">
+          <Link href="/#priser">
+            Priser
+            {/* <NavigationMenuTrigger>Priser</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="p-4 w-[374px] md:w-[500px] lg:w-[600px]">
                 <Carousel
@@ -63,25 +64,26 @@ export function DesktopNavigationMenu() {
                   </CarouselContent>
                 </Carousel>
               </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-        </Link>
+            </NavigationMenuContent> */}
+          </Link>
+        </NavigationMenuItem>
         <NavigationMenuItem className="hidden sm:block">
           <Link href="/galleri">
-            <NavigationMenuTrigger>Galleri</NavigationMenuTrigger>
+            Galleri
+            {/* <NavigationMenuTrigger>Galleri</NavigationMenuTrigger> */}
           </Link>
           <NavigationMenuContent>
             <ul className="grid w-[374px] gap-3 p-4 md:w-[500px] grid-cols-3 lg:w-[600px] ">
               {Array(6)
                 .fill()
                 .map((item, i) => (
-                    <Image
-                      key={i}
-                      src={`/gallery/boerneklip${i + 1}.jpg`}
-                      width={300}
-                      height={300}
-                      className="bg-[#eee] flex items-center justify-center rounded-md object-cover aspect-square "
-                    />
+                  <Image
+                    key={i}
+                    src={`/gallery/boerneklip${i + 1}.webp`}
+                    width={300}
+                    height={300}
+                    className="bg-[#eee] flex items-center justify-center rounded-md object-cover aspect-square "
+                  />
                 ))}
             </ul>
           </NavigationMenuContent>

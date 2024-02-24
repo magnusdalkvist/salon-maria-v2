@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <div className="p-6">
+    <footer className="p-6">
       <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-4 justify-between sm:items-start text-white mx-auto max-w-screen-xl">
         <div className="flex flex-col items-center text-center sm:items-start sm:text-left gap-4">
           <Image
-            src="/logo.jpg"
+            src="/logo.webp"
             width="1600"
             height="302"
             alt="logo"
@@ -69,6 +69,6 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

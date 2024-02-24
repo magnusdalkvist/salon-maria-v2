@@ -8,21 +8,26 @@ import {
 } from "@/components/ui/accordion";
 import { prices } from "../data/prices";
 import { useAccordionStore } from "../page";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Prices() {
   return (
-    <div className="px-4 md:px-6 py-10 md:py-[100px] bg-white scroll-m-14" id="priser">
+    <section className="px-4 md:px-6 py-10 md:py-[100px] bg-white scroll-m-14" id="priser">
       <div className="mx-auto max-w-screen-xl flex flex-col md:flex-row gap-6 lg:gap-8">
-        <div className="flex flex-col gap-2 md:w-[250px] md:py-2">
-          <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-serif lg:text-justify">
+        <div className="flex flex-col gap-2 md:w-[250px] md:py-2 ite">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-serif lg:text-justify">
             Priser
-          </p>
+          </h2>
           <p>Du kan betale med kort, kontant og MobilePay</p>
           <p>Studierabat / pensionist: -10%</p>
+          <Button asChild variant="outline" className="border-black text-black">
+            <Link href="https://salon-maria.planway.com/">Book tid</Link>
+          </Button>
         </div>
         <PriceList />
       </div>
-    </div>
+    </section>
   );
 }
 
