@@ -62,3 +62,16 @@ main {
     transform: scaleX(1);
   }
 }
+
+.show-text {
+  animation: showText 350ms ease-in-out;
+}
+
+@keyframes showText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}

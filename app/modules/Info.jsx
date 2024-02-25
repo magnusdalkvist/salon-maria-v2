@@ -57,7 +57,7 @@ export function Info({ enableGSAP = false, slides = [] }) {
               return (
                 <div
                   key={i}
-                  className={clsx("flex flex-col gap-2", current != i + 1 && "hidden")}
+                  className={clsx("flex flex-col gap-2 transition-opacity", current != i + 1 ? "hidden" : 'show-text')}
                   dangerouslySetInnerHTML={{ __html: slide.content }}
                 />
               );
