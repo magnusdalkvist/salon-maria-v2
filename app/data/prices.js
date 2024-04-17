@@ -6,7 +6,7 @@ export const prices = [
       { name: "Dameklip", price: 340 },
       { name: "Dameklip m. vask", price: 440 },
       { name: "Luksus dameklip (proteinkur + massage)", price: 500 },
-      { name: "Luksus dameklip (Olaplex + føn)", price: 890 },
+      { name: "Luksus dameklip (Olaplex + føn)", price: 650 },
       { name: "Dameklip + Botox hår", price: 850 },
       { name: "Herreklip", price: 250 },
       { name: "Børn første klip", price: 350 },
