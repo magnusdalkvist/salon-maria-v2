@@ -10,7 +10,7 @@ export const metadata = {
   description: "Velkommen til Salon Maria - en bæredygtig, familievenlig frisøreoplevelse med innovative klipninger og luksuriøs hårpleje",
   favicon: "/favicon.ico",
   openGraph: {
-    images: '/logo.webp',
+    images: '/logo_square.webp',
   },
 };
 
