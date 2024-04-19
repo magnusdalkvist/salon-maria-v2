@@ -9,6 +9,9 @@ export const metadata = {
   title: "Salon Maria",
   description: "Velkommen til Salon Maria - en bæredygtig, familievenlig frisøreoplevelse med innovative klipninger og luksuriøs hårpleje",
   favicon: "/favicon.ico",
+  openGraph: {
+    images: '/logo.webp',
+  },
 };
 
 
