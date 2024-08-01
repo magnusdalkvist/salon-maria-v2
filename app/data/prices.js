@@ -3,7 +3,7 @@ export const prices = [
     title: "Klip",
     items: [
       { name: "Pandehår", price: 90 },
-      { name: "Dameklip", price: 340 },
+      { name: "Dameklip", price: 350 },
       { name: "Dameklip m. vask", price: 440 },
       { name: "Luksus dameklip (proteinkur + massage)", price: 500 },
       { name: "Luksus dameklip (Olaplex + føn)", price: 650 },
@@ -23,7 +23,6 @@ export const prices = [
       { name: "Helfarvning - mellemlangt hår", price: 1150 },
       { name: "Helfarvning - langt hår", price: 1450 },
       { name: "Helfarvning - ekstra langt hår", price: 1600 },
-      { name: "Toning med striber", price: 200 },
       { name: "Striber - kort hår", price: 850 },
       { name: "Striber - mellemlangt hår", price: 1280 },
       { name: "Striber - langt hår", price: 1535 },
@@ -33,21 +32,22 @@ export const prices = [
   {
     title: "Diverse",
     items: [
-      { name: "Ret bryn", price: 140 },
+      { name: "Ret bryn", price: 120 },
+      { name: "Ret bryn m. tråd", price: 100 },
       { name: "Farve bryn m. retning", price: 250 },
-      { name: "Farve bryn + vipper m. retning", price: 325 },
+      { name: "Farve bryn + vipper m. retning", price: 330 },
       { name: "Vask + føn", price: 350 },
+      { name: "Tråd på overlæbe", price: 100 },
+      { name: "Tråd på ansigt", price: 200 },
     ],
   },
   {
     title: "Kur behandlinger",
     items: [
-      { name: "Hårkur + massage", price: 150 },
-      { name: "Olaplex standalone", price: 355 },
-      { name: "Keratin filer", price: 800 },
-      { name: "Keratin behandling", price: 1500 },
-      { name: "Botox hår", price: 600 },
-      { name: "K18 kurbehandling", price: 200 },
+      { name: "Olaplex standalone", price: "Fra 355" },
+      { name: "Keratin behandling", price: "Fra 2300" },
+      { name: "Botox hår", price: "Fra 690" },
+      { name: "K18 kurbehandling", price: "Fra 450" },
     ],
   },
 ];

@@ -47,10 +47,10 @@ function PriceList() {
             <AccordionTrigger className="text-xl">{price.title}</AccordionTrigger>
             <AccordionContent className="flex flex-col gap-2">
               {price.items.map((item, i) => (
-                <div key={i} className="flex gap-2">
-                  {item.name}
-                  <div className="border-b border-dashed border-grey flex-1 mb-1.5"></div>
-                  <span>{item.price} kr.</span>
+                <div key={i} className="flex gap-2 items-center">
+                  <div>{item.name}</div>
+                  <div className="border-b border-dashed border-grey flex-1 mb-1.5 h-4"></div>
+                  <span className="min-w-max">{item.from && "Fra "}{item.price} kr.</span>
                 </div>
               ))}
             </AccordionContent>

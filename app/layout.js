@@ -6,6 +6,7 @@ import { Footer } from "./modules/Footer";
 import Script from "next/script";
 
 export const metadata = {
+  metadataBase: new URL('https://www.salonmaria.info/'),
   title: "Salon Maria",
   description: "Velkommen til Salon Maria - en bæredygtig, familievenlig frisøreoplevelse med innovative klipninger og luksuriøs hårpleje",
   favicon: "/favicon.ico",
