@@ -1,9 +1,18 @@
+"use client";
 import { create } from "zustand";
 import { Hero } from "./modules/Hero";
 import { Hours } from "./modules/Hours";
 import { Info } from "./modules/Info";
 import { Prices } from "./modules/Prices";
 import Map from "./modules/Map";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { useEffect, useState } from "react";
 
 export const useAccordionStore = create((set) => ({
   active: 0,
@@ -11,8 +20,47 @@ export const useAccordionStore = create((set) => ({
 }));
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setOpen(true);
+    }, 2000);
+  }, []);
+
   return (
     <main className="">
+      <Dialog onOpenChange={setOpen} open={open}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Salon Maria fylder 10 år 🎉</DialogTitle>
+            <DialogDescription>
+              Kære Familie, venner og kunder gamle som nye 😊
+              <br />
+              <br />
+              Salon Maria fylder 10 år 🎉 Vi glæder os til at byder jer velkommen torsdag den
+              19/9-24. Der slår vi nemlig døren op for vores nye flotte salon som er blevet
+              nyrenoveret og klar til at tage imod jer i nye omgivelser.
+              <br />
+              <br />
+              I denne anledning får i 25% på alle behandlinger der bliver bestilt denne dag og 25%
+              på gavekort samt produkter.
+              <br />
+              <br />
+              Ved køb af gavekort denne dag giver vi en lille ekstra gave med i købet. Vi sørger
+              selvfølgelig også for bobler og let forplejning.
+              <br />
+              <br />
+              Tusind tak for støtten.
+              <br />
+              <br />
+              Mvh
+              <br />
+              Salon Maria
+            </DialogDescription>
+          </DialogHeader>
+        </DialogContent>
+      </Dialog>
       <Hero />
       <Info slides={slides} enableGSAP />
       <Hours />
