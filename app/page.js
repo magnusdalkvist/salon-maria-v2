@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <main className="">
-      <Dialog onOpenChange={setOpen} open={open}>
+      {/* <Dialog onOpenChange={setOpen} open={open}>
         <DialogContent>
           <DialogHeader>
             <DialogTitle>Salon Maria fylder 10 år 🎉</DialogTitle>
@@ -60,7 +60,7 @@ export default function Home() {
             </DialogDescription>
           </DialogHeader>
         </DialogContent>
-      </Dialog>
+      </Dialog> */}
       <Hero />
       <Info slides={slides} enableGSAP />
       <Hours />

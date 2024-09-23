@@ -40,7 +40,7 @@ export function Hero() {
             Salon Maria skaber en bæredygtig, familievenlig frisøreoplevelse med innovative
             klipninger og luksuriøs hårpleje i København.
           </h2>
-          <span className="text-red">OBS: Vi holder reparation- og sommerferielukket fra 8. september til 18. september.</span>
+          {/* <span className="text-red">OBS: Vi holder reparation- og sommerferielukket fra 8. september til 18. september.</span> */}
           <ul className="list-[square] ml-5 flex flex-col gap-2">
             <li>Indbydende Familievenlig Atmosfære</li>
             <li>Bæredygtige & miljøvenlige Produkter</li>
