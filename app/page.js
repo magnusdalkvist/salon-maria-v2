@@ -75,32 +75,6 @@ const slides = [
   {
     content: `
         <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-serif">
-          Halloween
-        </h2>
-        <p class="italic">
-          I forbindelse med klipninger
-        </p>
-        <p>
-          Den 30. og 31. oktober samt 1. november tilbyder vi en fantastisk Halloween-gavepakke!
-        </p>
-        <p>
-          Pakken indeholder:
-          <ul class="list-[square] ml-5 flex flex-col gap-2">
-            <li>Et professionelt portrætfoto fra elart.dk</li>
-            <li>Halloween-makeup</li>
-            <li>En skøn ballon</li>
-          </ul>
-        </p>
-        <p>
-          Husk at bestille i god tid, da vi har et begrænset antal gavepakker!<br>Vi glæder os til at se dig!
-        </p>
-      `,
-    image: "/halloween.jpeg",
-    alt: "Halloween",
-  },
-  {
-    content: `
-        <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-serif">
           Om Maria
         </h2>
         <p>
