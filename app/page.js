@@ -81,7 +81,7 @@ const slides = [
           I anledningen af Valentines Day har vi i Salon Maria hele to romantiske tilbud resten af februar måned 💞 <br><br> Vores første Valentins Day tilbud er dameklip med k18 detox behandling kun 450,- <br><br> Striber, obre eller balayage med Olaplex kur kun 1400,-
         </p>
       `,
-    image: "/logo_square.webp",
+    image: "/valentines.webp",
     alt: "Maria",
   },
   {
