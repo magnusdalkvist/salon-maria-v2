@@ -75,18 +75,6 @@ const slides = [
   {
     content: `
         <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-serif">
-          Valentines Day
-        </h2>
-        <p>
-          I anledningen af Valentines Day har vi i Salon Maria hele to romantiske tilbud resten af februar måned 💞 <br><br> Vores første Valentins Day tilbud er dameklip med k18 detox behandling kun 450,- <br><br> Striber, obre eller balayage med Olaplex kur kun 1400,-
-        </p>
-      `,
-    image: "/valentines.webp",
-    alt: "Maria",
-  },
-  {
-    content: `
-        <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-serif">
           Om Maria
         </h2>
         <p>
