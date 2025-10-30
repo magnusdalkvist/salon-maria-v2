@@ -4,9 +4,9 @@ export const prices = [
     items: [
       { name: "Pandehår", price: 90 },
       { name: "Dameklip", price: 350 },
-      { name: "Dameklip m. vask", price: 440 },
+      { name: "Dameklip m. vask", price: 450 },
       { name: "Luksus dameklip (proteinkur + massage)", price: 500 },
-      { name: "Luksus dameklip (Olaplex + føn)", price: 650 },
+      { name: "Luksus dameklip (Olaplex + føn)", price: 800 },
       { name: "Dameklip + Botox hår", price: 850 },
       { name: "Herreklip", price: 250 },
       { name: "Børn første klip", price: 350 },
@@ -21,7 +21,7 @@ export const prices = [
       { name: "Bundfarve", price: 575 },
       { name: "Helfarvning - kort hår", price: 750 },
       { name: "Helfarvning - mellemlangt hår", price: 1150 },
-      { name: "Helfarvning - langt hår", price: 1450 },
+      { name: "Helfarvning - langt hår", price: 1500 },
       { name: "Helfarvning - ekstra langt hår", price: 1600 },
       { name: "Striber - kort hår", price: 850 },
       { name: "Striber - mellemlangt hår", price: 1280 },
@@ -30,15 +30,11 @@ export const prices = [
     ],
   },
   {
-    title: "Diverse",
+    title: "Bryn & Vipper",
     items: [
-      { name: "Ret bryn", price: 120 },
-      { name: "Ret bryn m. tråd", price: 100 },
+      { name: "Ret bryn", price: 140 },
       { name: "Farve bryn m. retning", price: 250 },
       { name: "Farve bryn + vipper m. retning", price: 330 },
-      { name: "Vask + føn", price: 350 },
-      { name: "Tråd på overlæbe", price: 100 },
-      { name: "Tråd på ansigt", price: 200 },
     ],
   },
   {
